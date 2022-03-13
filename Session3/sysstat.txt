@@ -1,0 +1,21 @@
+# Command: vmstat
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 741140  83012 1028576    0    0   191   352  201  383  3  2 93  2  0
+
+
+
+
+# Command: sar -u
+Linux 5.4.0-97-generic (srv1) 	03/01/2022 	_x86_64_	(1 CPU)
+
+06:41:11 AM  LINUX RESTART	(1 CPU)
+
+06:44:02 AM  LINUX RESTART	(1 CPU)
+
+06:45:03 AM     CPU     %user     %nice   %system   %iowait    %steal     %idle
+06:55:01 AM     all      4.22      0.21      1.05      0.70      0.00     93.82
+07:05:01 AM     all      2.36      0.63      0.72      0.74      0.00     95.56
+07:15:01 AM     all      4.03      0.36      2.12      2.14      0.00     91.35
+07:25:01 AM     all      0.50      0.00      1.32      0.08      0.00     98.10
+Average:        all      2.77      0.30      1.30      0.91      0.00     94.72

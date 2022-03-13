@@ -1,0 +1,11 @@
+[Unit]
+Description=Old files remover
+
+[Service]
+ExecStart=/home/ahsp/scripts/remover.sh
+ExecStop=/home/ahsp/scripts/remover.sh
+ExecReload=/home/ahsp/scripts/remover.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
