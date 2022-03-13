@@ -1,0 +1,2 @@
+# This directory has been created for tar backups :)
+# Command: tar czvf backup.tar.gz $(find /etc | grep '[a-g]$')

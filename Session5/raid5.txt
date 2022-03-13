@@ -1,0 +1,5 @@
+steps:
+	1- fdisk /dev/sdb (create 4 4G partitions)
+	2- mdadm -C /dev/md0 -l 5 -n 4 /dev/sdb1 /dev/sdb2 /dev/sdb3 /dev/sdb4
+	3- mkfs.ext4 /dev/md0
+	4- fstab: UUID=221538c1-6297-42bb-9103-55d5fce9a2c6	/mnt	ext4	defaults	0	0

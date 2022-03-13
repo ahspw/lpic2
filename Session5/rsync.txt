@@ -1,0 +1,3 @@
+command: rsync -avz rsync://192.168.0.8/backupdir /home/ahsp/Downloads/rsync
+crontab: 0 0 * * * ahsp rsync -avz rsync://192.168.0.8/backupdir /home/ahsp/Downloads/rsync
+# 192.168.0.8 was an ubuntu server

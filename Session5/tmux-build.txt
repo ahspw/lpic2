@@ -1,0 +1,6 @@
+steps:
+	1- git clone https://github.com/tmux/tmux.git
+	2- ./autogen.sh
+	3- ./configure #yum install libevent-devel ncurses ncurses-devel
+	4- make -j 2
+	5- make install

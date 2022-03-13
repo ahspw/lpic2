@@ -1,0 +1,10 @@
+steps:
+	1- fdisk /dev/sdb (1 nG partition has been created)
+	2- mkfs.ext4 /dev/sdb1
+	3- mount /dev/sdb1 /mnt
+	4- echo 'Test for recovering on ext4 filesystem' > /mnt/file.txt
+	5- rm !$ (!$ means last parameter)
+	6- debugfs -w /dev/sdb1
+		1- rm file.txt
+		2- lsdel (find file's inode number)
+		3- undel <inode number> file.txt.bak
