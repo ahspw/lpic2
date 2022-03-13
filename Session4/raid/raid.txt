@@ -1,0 +1,3 @@
+steps:
+	1- lsmod | grep raid
+	2- modprob raid0

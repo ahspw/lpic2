@@ -1,0 +1,18 @@
+Script started on 2022-03-08 16:55:00+00:00 [TERM="linux" TTY="/dev/tty1" COLUMNS="100" LINES="37"]
+ahsp@srv1:~/github/Session4$ lsmod | grep raid
+[01;31m[Kraid[m[K10                 61440  0
+[01;31m[Kraid[m[K456               155648  0
+async_[01;31m[Kraid[m[K6_recov      24576  1 [01;31m[Kraid[m[K456
+async_memcpy           20480  2 [01;31m[Kraid[m[K456,async_[01;31m[Kraid[m[K6_recov
+async_pq               24576  2 [01;31m[Kraid[m[K456,async_[01;31m[Kraid[m[K6_recov
+async_xor              20480  3 async_pq,[01;31m[Kraid[m[K456,async_[01;31m[Kraid[m[K6_recov
+async_tx               20480  5 async_pq,async_memcpy,async_xor,[01;31m[Kraid[m[K456,async_[01;31m[Kraid[m[K6_recov
+[01;31m[Kraid[m[K6_pq              114688  4 async_pq,btrfs,[01;31m[Kraid[m[K456,async_[01;31m[Kraid[m[K6_recov
+libcrc32c              16384  2 btrfs,[01;31m[Kraid[m[K456
+[01;31m[Kraid[m[K1                  45056  0
+[01;31m[Kraid[m[K0                  24576  0
+ahsp@srv1:~/github/Session4$ modprobe raid9[K0
+ahsp@srv1:~/github/Session4$ exit
+exit
+
+Script done on 2022-03-08 16:55:33+00:00 [COMMAND_EXIT_CODE="0"]

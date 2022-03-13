@@ -1,0 +1,4 @@
+steps:
+	1- autoreconf -fi
+	2- ./configure --without-ssl
+	3- make
