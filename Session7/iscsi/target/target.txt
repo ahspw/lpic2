@@ -1,0 +1,5 @@
+# Ubuntu Server
+	1. sudo apt install tgt
+	2. vim /etc/tgt/conf.d/ahsp.conf
+	3. systemctl reload tgt
+	4. ufw allow iscsi-target

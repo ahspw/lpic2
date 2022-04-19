@@ -1,0 +1,8 @@
+# Ubuntu Server
+	1. sudo apt install open-iscsi
+	2. iscsiadm -m discovery -t sendtargets -p 192.168.0.7
+	3. iscsi -m node -l
+	4. fdisk /dev/sdb
+	5. mkfs.ext4 /dev/db1
+	6. mount -t ext4 /dev/sdb1 /mnt
+	7. echo "It's Working!" > /mnt/success.txt
